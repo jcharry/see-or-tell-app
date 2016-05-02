@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>See or Tell</title>
+    </head>
+    <body>
+
+
+        <div id='page1' class='page'>
+            <div id='page1-head' class='header'>
+                <h1>See or Tell</h1>
+            </div>
+            <div id='page1-main' class='main'>
+                <div id='join-room' class='modal-view'>
+                    <div class='fully-centered'>
+                        <label for='roomname'>Room name</label>
+                        <input type='text' id='roomname' name='roomname'>
+                        <button id='joinroom'>Join room</button>
+                    </div>
+                </div>
+                <div id='waiting' class='modal-view overlay'>
+                    <div class='horizontally-centered'>
+                        <button id='close-waiting-overlay'>x</button>
+                        <p>waiting for a partner to join the room...</p>
+                    </div>
+                </div>
+                <div id='error' class='modal-view overlay'>
+                    <div class='fully-centered'>
+                        <p id='error-message'>waiting for a partner to join the room...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id='game-page' class='page'>
+            <h2 id='roomtitle' class='top-margin'></h2>
+            <p id='question-level' class='centered-text'></p>
+            <p id='question-level-byline' class='centered-text'>easy questions</p>
+            <div id='game-room-main' class='main'>
+                <div class='fully-centered'>
+                </div>
+
+                <div id='question-container' class='fully-centered'>
+                    <p id='question'> this is the game page, yo </p>
+                </div>
+
+                <div id='answer-container' class='fully-centered'>
+                    <button id='answer'>I'll answer</button>
+                    <button id='no-answer'>I won't answer</button>
+                </div>
+
+                <div id='waiting-overlay' class='fully-centered overlay'>
+                    <p id='waiting-text'></p>
+                </div>
+
+                <div id='dataContainer'>
+                </div>
+            </div>
+            <div id='img-container'>
+                <img id='myimage' src=''>
+                <button id='close-img'>close</button>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src='js/jquery-2.2.3.min.js'></script>
+        <script src='js/socket.io.js'></script>
+        <script type='text/javascript' src='db/questions.js'></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

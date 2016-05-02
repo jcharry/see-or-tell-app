@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.jamiecharry.datingapp"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.jamiecharry.datingapp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.jamiecharry.datingapp"
+        },
+        "cordova-plugin-calendar": {
+            "PACKAGE_NAME": "com.jamiecharry.datingapp"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.jamiecharry.datingapp"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.jamiecharry.datingapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.jamiecharry.datingapp"
+        }
+    }
+}
